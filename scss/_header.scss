@@ -1,0 +1,144 @@
+.nav-bar {
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 102px;
+  margin: 0 auto;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  &__logo-wrapper {
+    display: flex;
+    position: absolute;
+    max-width: 70px;
+    width: 100%;
+    height: 92px;
+    left: 112px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    max-width: 879px;
+    width: 100%;
+    height: 46px;
+    right: 100px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #e75624;
+    height: 46px;
+  }
+
+  &__dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 220px;
+    height: 280px;
+    top: 74px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+  }
+
+  &__dropdown-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-child a::before {
+      display: none;
+    }
+  }
+
+  &__dropdown-link {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 220px;
+    height: 56px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #e75624;
+
+    &::before {
+      display: inline;
+      content: '';
+      position: absolute;
+      width: 140px;
+      height: 0px;
+      border: 1px solid #e75624;
+      top: 0;
+    }
+
+    &:hover {
+      background: #f7cf0d;
+      font-weight: 700;
+      transition: all 0.1s ease;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-bar__list:hover {
+  padding: 28px 0 28px;
+}
+
+.nav-bar ul li:hover .nav-bar__dropdown {
+  transition: all 0.1s ease;
+  display: flex;
+}
+.nav-bar__dropdown li:first-child a:hover {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.nav-bar__dropdown li:last-child a:hover {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 171px;
+  height: 46px;
+  background: #e75624;
+  border: 1px solid #e75624;
+  border-radius: 100px;
+  font-weight: 700;
+  color: #ffffff;
+  &::before {
+    content: '';
+    background-image: url(../img/ico/nav-bar/phone.svg);
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 21px;
+  }
+}
