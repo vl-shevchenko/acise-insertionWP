@@ -3,16 +3,17 @@
   flex-direction: column;
   align-items: center;
   padding: 58px 0px 60px;
-  height: 533px;
+  position: relative;
+  // min-height: 533px;
+  height: 100%;
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
-
-    position: absolute;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
   }
 }
 
@@ -29,40 +30,14 @@
   border: 1px solid #000000;
 }
 
-.title-section {
-  &__wrapper {
-  }
-
-  &__title {
-    //    width: 209px;
-    // height: 42px;
-    /* White Background/H2 (White Background) */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 42px;
-  }
-
-  &__suptitle {
-    //    width: 380px;
-    // height: 24px;
-    /* White Background/P (Medium) (White Background) */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #999999;
-  }
-}
-
 .swiper-reviews {
   &__wrapper {
   }
 
   &__cards-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
   }
 
@@ -191,7 +166,9 @@
 //swiper
 .swiper {
   width: 100%;
-  height: 279px;
+  min-height: 279px;
+  height: 100%;
+  // position: inherit;
 }
 
 .swiper-pagination {

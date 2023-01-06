@@ -1,7 +1,36 @@
 @import '_null';
 @import '_header';
 @import '_reviews';
+@import '_fqa';
 
 @import url(https://fonts.googleapis.com/css?family=Readex+Pro:200,300,regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.title-section {
+  &__wrapper {
+  }
+
+  &__title {
+    //    width: 209px;
+    // height: 42px;
+    /* White Background/H2 (White Background) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  &__suptitle {
+    //    width: 380px;
+    // height: 24px;
+    /* White Background/P (Medium) (White Background) */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+  }
+}
