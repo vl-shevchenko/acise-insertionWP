@@ -179,6 +179,10 @@
     linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
       calc(100% - 4px) no-repeat,
     linear-gradient(90deg, #ff6800 0%, #ff1f00 100%) no-repeat 100% 100%;
+
+  //     border: 2px solid;
+
+  // border-image-source: linear-gradient(90deg, #FF6800 0%, #FF1F00 100%);
 }
 .fqa__question-wrapper.open .fqa__question {
   top: 15px;

@@ -1,0 +1,214 @@
+@media (max-width: 920px) {
+  .nav-bar-mobile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 51;
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+  }
+  .burger-container {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    justify-content: center;
+    margin: 13px 0 15px 12.52px;
+  }
+
+  .burger {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .bar {
+    display: block;
+    width: 22.11px;
+    height: 1.47px;
+    margin: 5px auto;
+    background: #e75624;
+    transition: 0.2s;
+  }
+
+  .burger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .burger.active .bar:nth-child(2) {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+  .nav-bar.open {
+    left: 0;
+  }
+  .nav-bar-mobile-number {
+    display: flex;
+    width: 154.41px;
+    height: 42px;
+    background: #e75624;
+    /* Orange */
+
+    border: 1px solid #e75624;
+    border-radius: 100px 0px 0px 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0 6px 0;
+    right: 0;
+    position: absolute;
+    &::before {
+      content: '';
+      background-image: url(../img/ico/nav-bar/phone.svg);
+      width: 14px;
+      height: 14px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 7px;
+    }
+  }
+  .nav-bar-mobile-number__link {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    /* Blanc */
+
+    color: #ffffff;
+  }
+  .container-nav-bar-logo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-bar-logo-wrapper {
+    position: absolute;
+    width: 29.21px;
+    height: 40.31px;
+    margin: 2.69px 0 9px 44.24px;
+    justify-content: space-evenly;
+  }
+  .nav-bar {
+    align-items: flex-start;
+    padding-top: 40px;
+    background: #fee8ce;
+    box-shadow: none;
+    height: 100vh;
+    position: fixed;
+    left: -100%;
+    overflow: auto;
+    transition: 0.3s;
+    z-index: 50;
+    top: 52px;
+  }
+  .nav-bar__wrapper {
+    gap: 40px;
+    height: auto;
+    margin-right: 41px;
+    margin-left: 45px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-bar__list {
+    flex-direction: column;
+  }
+  .nav-bar__list:hover {
+    padding: 0;
+  }
+  .nav-bar__link {
+    font-size: 20px;
+    line-height: 25px;
+    height: auto;
+  }
+
+  .nav-bar__dropdown {
+    position: inherit;
+    align-items: flex-start;
+    top: -200px;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    border-radius: unset;
+    gap: 15px;
+    padding-top: 15px;
+    background-color: unset;
+  }
+  .nav-bar__dropdown-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & a::before {
+      display: none;
+    }
+  }
+  .nav-bar ul li:hover .nav-bar__dropdown {
+    transition: all 0.1s ease;
+    display: flex;
+    top: 0;
+  }
+
+  .nav-bar__dropdown-link {
+    width: auto;
+    height: auto;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    /* Noir */
+
+    color: #252525;
+    &:hover {
+      color: #8b8b8b;
+    }
+  }
+
+  .nav-bar__dropdown-link:hover {
+    background: none;
+    font-weight: 400;
+  }
+
+  .nav-bar__dropdown li:first-child a:hover {
+    border: none;
+  }
+  .nav-bar__dropdown li:last-child a:hover {
+    border: none;
+  }
+
+  .btn-number {
+    width: 227px;
+    height: 58px;
+
+    /* Orange */
+
+    background: #e75624;
+    /* Orange */
+
+    border: 1px solid #e75624;
+    border-radius: 100px;
+    &::before {
+      content: '';
+      background-image: url(../img/ico/nav-bar/phone.svg);
+      width: 16px;
+      height: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 7px;
+    }
+  }
+  a.nav-bar__link.btn-number {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+//reviews
+.reviews {
+  margin-top: 52px;
+}

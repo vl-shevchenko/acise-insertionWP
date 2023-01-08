@@ -34,3 +34,12 @@ contactUsButton.addEventListener('click', function (e) {
 formClose.addEventListener('click', function (e) {
   formContainer.classList.remove('form-open');
 });
+
+const burger = document.querySelector('#burger');
+const popup = document.querySelector('#popup');
+
+burger.addEventListener('click', burgerHandler);
+function burgerHandler(e) {
+  popup.classList.toggle('open');
+  burger.classList.toggle('active');
+}
