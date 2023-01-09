@@ -26,63 +26,38 @@
   }
 
   &__title {
-    width: 462px;
-    height: 88px;
-
-    /* H3 */
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    /* or 138% */
-
     text-align: center;
-
     color: #ffffff;
+    min-width: 285px;
   }
 
   &__button {
     cursor: pointer;
-    /* Button Filled */
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 4.5px 16px;
-
     width: 152px;
     height: 56px;
-
-    /* Black Shades And White/White */
-
     background: #ffffff;
     border-radius: 15px;
     border: none;
   }
   &__button-text {
-    /* Button */
-
-    width: 120px;
-    height: 47px;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 47px;
-    /* identical to box height, or 336% */
-
     text-align: center;
     text-transform: capitalize;
     font-feature-settings: 'pnum' on, 'lnum' on;
-
-    /* Main Gradient */
-
     background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

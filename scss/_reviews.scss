@@ -1,19 +1,15 @@
 .reviews {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 58px 0px 60px;
-  position: relative;
-  min-height: 533px;
+  justify-content: center;
   height: 100%;
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 32px;
     max-width: 1440px;
     width: 100%;
+    padding: 58px 112px 60px;
+    align-items: center;
   }
 }
 
@@ -22,12 +18,10 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  gap: 6px;
 }
 
 .swiper-reviews {
-  &__wrapper {
-  }
-
   &__cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +37,9 @@
     align-items: center;
     padding: 40px;
     gap: 24px;
-    width: 384px;
+    max-width: 384px;
+    min-width: 310px;
+    width: 100%;
     height: 231px;
     box-shadow: 0px 10px 20px #00000026;
 
@@ -79,19 +75,13 @@
   }
 
   &__card-review {
-    /* Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. */
     width: 300px;
     height: 72px;
-
-    /* White Background/P (Medium) (White Background) */
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
-
     text-align: center;
     color: #808080;
   }
@@ -102,7 +92,6 @@
     align-items: center;
     padding: 0px;
     gap: 12px;
-
     width: 179px;
     height: 55px;
   }
@@ -130,13 +119,8 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
-    /* identical to box height, or 100% */
-
     display: flex;
     align-items: center;
-
-    /* Black Shades And White/Black S:80 | #333333 */
-
     color: #333333;
   }
 
@@ -146,23 +130,16 @@
     font-weight: 300;
     font-size: 10px;
     line-height: 10px;
-    /* identical to box height, or 100% */
-
     display: flex;
     align-items: center;
-
-    /* Black Shades And White/Black S:70 | #666666 */
-
     color: #666666;
   }
 }
 
-//swiper
+// swiper
 .swiper {
   width: 100%;
-  min-height: 279px;
-  height: 100%;
-  // position: inherit;
+  height: 279px;
 }
 
 .swiper-pagination {
@@ -174,8 +151,6 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -200,9 +175,6 @@
 .swiper-pagination-bullet-active {
   width: 16px;
   height: 16px;
-
-  /* Main Gradient */
-
   background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
   border: none;
 }

@@ -1,4 +1,5 @@
 @media (max-width: 920px) {
+  //header
   .nav-bar-mobile-wrapper {
     display: flex;
     justify-content: space-between;
@@ -13,7 +14,7 @@
     align-items: center;
     z-index: 100;
     justify-content: center;
-    margin: 13px 0 15px 12.52px;
+    padding: 13px 10px 15px 12.52px;
   }
 
   .burger {
@@ -48,8 +49,6 @@
     width: 154.41px;
     height: 42px;
     background: #e75624;
-    /* Orange */
-
     border: 1px solid #e75624;
     border-radius: 100px 0px 0px 100px;
     justify-content: center;
@@ -74,10 +73,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-
-    /* Blanc */
-
     color: #ffffff;
   }
   .container-nav-bar-logo {
@@ -158,10 +153,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-
-    /* Noir */
-
     color: #252525;
     &:hover {
       color: #8b8b8b;
@@ -183,12 +174,7 @@
   .btn-number {
     width: 227px;
     height: 58px;
-
-    /* Orange */
-
     background: #e75624;
-    /* Orange */
-
     border: 1px solid #e75624;
     border-radius: 100px;
     &::before {
@@ -206,9 +192,25 @@
     font-size: 20px;
     line-height: 25px;
   }
-}
 
-//reviews
-.reviews {
-  margin-top: 52px;
+  //reviews
+  .reviews {
+    margin-top: 52px;
+  }
+  .reviews__container {
+    padding: 50px 10px;
+  }
+
+  //fqa
+  .fqa__wrapper {
+    padding: 50px 10px;
+  }
+  .fqa__wrapper {
+    flex-wrap: wrap;
+  }
+
+  //contact-us
+  .contact-us__wrapper {
+    padding: 50px 10px;
+  }
 }

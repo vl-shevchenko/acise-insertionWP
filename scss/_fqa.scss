@@ -1,22 +1,24 @@
 .fqa {
   display: flex;
   justify-content: center;
-  padding: 40px 111px;
   min-height: 600px;
   &__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 136px;
-
+    padding: 40px 111px;
     position: relative;
-    width: 1439.45px;
+    max-width: 1439.45px;
+    width: 100%;
     height: 100%;
   }
   &__info-wrapper {
     display: flex;
     gap: 20px;
-    width: 491px;
+    max-width: 491px;
+    min-width: 300px;
+    width: 100%;
     flex-direction: column;
     position: relative;
   }
@@ -29,15 +31,13 @@
     padding: 0px;
     gap: 12px;
 
-    width: 488px;
+    max-width: 488px;
+    width: 100%;
   }
 
   &__question-wrapper {
-    width: 488px;
-    height: 56px;
-
-    /* Main Gradient */
-
+    max-width: 488px;
+    width: 100%;
     background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
     border-radius: 15px;
     position: relative;
@@ -45,61 +45,41 @@
   }
 
   &__question {
-    position: absolute;
-    height: 24px;
-    left: 18.5px;
-    top: calc(50% - 24px / 2);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 16px 45px 16px 18.5px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-
-    /* Main Colors/White #FFFFFF */
-
     color: #ffffff;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/fqa/plus.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 18px;
+    }
   }
-  &__question-button {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    right: 18px;
-    top: 16px;
-    bottom: 16px;
-  }
-  &__question-button-line {
-    position: absolute;
-    // left: 20.83%;
-    // right: 20.83%;
-    // top: 50%;
-    // bottom: 50%;
-    width: 14px;
-    background-color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-  }
+
   &__answer {
     display: none;
-    position: absolute;
-    width: 341px;
-    height: 72px;
-    left: 19.5px;
-    top: 60px;
-
+    padding: 20px 19.5px 16px 19.5px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
-
     color: #808080;
-    //  transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   &__decor-wrapper {
@@ -129,38 +109,19 @@
     max-height: 436.58px;
     height: 100%;
     right: 0;
-
-    /* Main Gradient */
-
     background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
     border-radius: 15px;
     z-index: -1;
   }
 }
 
-.fqa__question-button-line:nth-child(2) {
-  transform: rotate(90deg);
-}
-
-.fqa__question-wrapper.open .fqa__question-button {
-  right: 17px;
-  top: 15px;
-}
-.fqa__question-wrapper.open .fqa__question-button-line:nth-child(1) {
-  border: 2px solid #333333;
-}
-.fqa__question-wrapper.open .fqa__question-button-line:nth-child(2) {
-  display: none;
-}
-
-.fqa__question-wrapper:hover {
+.fqa__question:hover {
   opacity: 0.7;
 }
 .fqa__question-wrapper.open {
-  box-sizing: border-box;
-
-  width: 488px;
-  height: 148px;
+  max-width: 488px;
+  width: 100%;
+  height: auto;
   background: radial-gradient(
         circle at 100% 100%,
         #ffffff 0,
@@ -179,14 +140,23 @@
     linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
       calc(100% - 4px) no-repeat,
     linear-gradient(90deg, #ff6800 0%, #ff1f00 100%) no-repeat 100% 100%;
-
-  //     border: 2px solid;
-
-  // border-image-source: linear-gradient(90deg, #FF6800 0%, #FF1F00 100%);
 }
 .fqa__question-wrapper.open .fqa__question {
-  top: 15px;
   color: #333333;
+  padding: 15px 45px 0 18.5px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/fqa/minus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 18px;
+  }
 }
 
 .fqa__question-wrapper.open .fqa__answer {
@@ -198,7 +168,4 @@
   align-items: flex-start;
   padding: 0px;
   gap: 5px;
-
-  width: 437px;
-  height: 71px;
 }

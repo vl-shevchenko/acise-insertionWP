@@ -18,8 +18,8 @@
 .form-body {
   box-sizing: border-box;
   position: relative;
-  width: 662px;
-  height: 604px;
+  max-width: 662px;
+  width: 100%;
   background: #01040d;
   border-radius: 4px;
   display: flex;
@@ -36,13 +36,9 @@
   position: absolute;
   width: 24px;
   height: 24px;
-
-  /* Background/bg-primary */
-
   transform: rotate(45deg);
   top: 15px;
   right: 13.13px;
-
   z-index: 13;
   &__line {
     position: absolute;
@@ -60,40 +56,30 @@
 }
 
 .form-title {
-  position: absolute;
-  width: 343px;
-  height: 75px;
-
-  /* h3 */
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 150%;
-  /* identical to box height, or 75px */
-
   text-transform: uppercase;
-
-  /* 9 */
-
   color: #ffffff;
   margin-top: 15px;
-
   z-index: 12;
 }
 
 .form {
-  position: absolute;
-  width: 561.36px;
-  height: 410px;
-
+  max-width: 561.36px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-
-  margin: 145px 54.64px 49px 50px;
-
+  margin: 55px 44.64px 49px 40px;
+  padding: 0 10px 0 10px;
+  &__input-text-type-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 24px;
+  }
   &__user-name-wrapper {
     display: flex;
     gap: 40px;
@@ -126,9 +112,9 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height */
-
     color: #ffffff;
+    margin-bottom: 50px;
+    height: 24px;
   }
 
   &__link {
@@ -137,44 +123,28 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height */
-
     text-decoration-line: underline;
-
-    /* 9 */
-
     color: #ffffff;
   }
 
   &__button {
     cursor: pointer;
-    position: relative;
     box-sizing: border-box;
-
-    //  position: absolute;
-    width: 560px;
+    max-width: 560px;
+    width: 100%;
     height: 60px;
-
     border: 1px solid #ffffff;
     border-radius: 4px;
     background-color: unset;
   }
   &__button-text {
-    position: absolute;
-    width: 44px;
-    height: 18px;
-    left: 257px;
-    top: 21px;
-
+    padding-top: 21px 259px 21px 257px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 18px;
-    /* identical to box height, or 112% */
-
     letter-spacing: 0.5px;
-
     color: #ffffff;
   }
 }

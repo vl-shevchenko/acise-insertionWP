@@ -84,6 +84,7 @@ body {
 
 .container-nav-bar-logo {
   max-width: 1440px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,21 +281,23 @@ body {
   background-position: center;
   margin-right: 7px;
 }
+.btn-number:hover {
+  background: #ff1f00;
+  color: #ffffff;
+}
+
+.nav-bar-mobile-number:hover {
+  background: #ff1f00;
+  color: #ffffff;
+}
 
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 58px 0px 60px;
-  position: relative;
-  min-height: 533px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
 }
 .reviews__container {
@@ -305,15 +308,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 32px;
   max-width: 1440px;
   width: 100%;
+  padding: 58px 112px 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reviews-title-wrapper {
@@ -328,6 +329,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 6px;
 }
 
 .swiper-reviews__cards-wrapper {
@@ -359,7 +361,9 @@ body {
           align-items: center;
   padding: 40px;
   gap: 24px;
-  width: 384px;
+  max-width: 384px;
+  min-width: 310px;
+  width: 100%;
   height: 231px;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1490196078);
           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1490196078);
@@ -369,16 +373,13 @@ body {
   border-radius: 15px;
 }
 .swiper-reviews__card-review {
-  /* Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. */
   width: 300px;
   height: 72px;
-  /* White Background/P (Medium) (White Background) */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
   text-align: center;
   color: #808080;
 }
@@ -425,14 +426,12 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
-  /* identical to box height, or 100% */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Black Shades And White/Black S:80 | #333333 */
   color: #333333;
 }
 .swiper-reviews__card-people-position {
@@ -441,21 +440,18 @@ body {
   font-weight: 300;
   font-size: 10px;
   line-height: 10px;
-  /* identical to box height, or 100% */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Black Shades And White/Black S:70 | #666666 */
   color: #666666;
 }
 
 .swiper {
   width: 100%;
-  min-height: 279px;
-  height: 100%;
+  height: 279px;
 }
 
 .swiper-pagination {
@@ -467,7 +463,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,7 +487,6 @@ body {
 .swiper-pagination-bullet-active {
   width: 16px;
   height: 16px;
-  /* Main Gradient */
   background: -webkit-gradient(linear, left top, right top, from(#ff6800), to(#ff1f00));
   background: -o-linear-gradient(left, #ff6800 0%, #ff1f00 100%);
   background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
@@ -527,7 +521,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 111px;
   min-height: 600px;
 }
 .fqa__wrapper {
@@ -542,8 +535,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 136px;
+  padding: 40px 111px;
   position: relative;
-  width: 1439.45px;
+  max-width: 1439.45px;
+  width: 100%;
   height: 100%;
 }
 .fqa__info-wrapper {
@@ -551,7 +546,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  width: 491px;
+  max-width: 491px;
+  min-width: 300px;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -574,12 +571,12 @@ body {
           align-items: flex-start;
   padding: 0px;
   gap: 12px;
-  width: 488px;
+  max-width: 488px;
+  width: 100%;
 }
 .fqa__question-wrapper {
-  width: 488px;
-  height: 56px;
-  /* Main Gradient */
+  max-width: 488px;
+  width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#ff6800), to(#ff1f00));
   background: -o-linear-gradient(left, #ff6800 0%, #ff1f00 100%);
   background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
@@ -590,57 +587,45 @@ body {
   transition: all 0.15s ease;
 }
 .fqa__question {
-  position: absolute;
-  height: 24px;
-  left: 18.5px;
-  top: calc(50% - 12px);
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  /* Main Colors/White #FFFFFF */
-  color: #ffffff;
-}
-.fqa__question-button {
-  position: absolute;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 24px;
-  height: 24px;
-  right: 18px;
-  top: 16px;
-  bottom: 16px;
-}
-.fqa__question-button-line {
-  position: absolute;
-  width: 14px;
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-.fqa__answer {
-  display: none;
-  position: absolute;
-  width: 341px;
-  height: 72px;
-  left: 19.5px;
-  top: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 16px 45px 16px 18.5px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
+  color: #ffffff;
+}
+.fqa__question::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/fqa/plus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 18px;
+}
+.fqa__answer {
+  display: none;
+  padding: 20px 19.5px 16px 19.5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
   color: #808080;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .fqa__decor-wrapper {
   max-width: 590.45px;
@@ -674,7 +659,6 @@ body {
   max-height: 436.58px;
   height: 100%;
   right: 0;
-  /* Main Gradient */
   background: -webkit-gradient(linear, left top, right top, from(#ff6800), to(#ff1f00));
   background: -o-linear-gradient(left, #ff6800 0%, #ff1f00 100%);
   background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
@@ -682,42 +666,34 @@ body {
   z-index: -1;
 }
 
-.fqa__question-button-line:nth-child(2) {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.fqa__question-wrapper.open .fqa__question-button {
-  right: 17px;
-  top: 15px;
-}
-
-.fqa__question-wrapper.open .fqa__question-button-line:nth-child(1) {
-  border: 2px solid #333333;
-}
-
-.fqa__question-wrapper.open .fqa__question-button-line:nth-child(2) {
-  display: none;
-}
-
-.fqa__question-wrapper:hover {
+.fqa__question:hover {
   opacity: 0.7;
 }
 
 .fqa__question-wrapper.open {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 488px;
-  height: 148px;
+  max-width: 488px;
+  width: 100%;
+  height: auto;
   background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 13px, transparent 13px) 0% 0%/15px 15px no-repeat, radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 13px, transparent 13px) 100% 0%/15px 15px no-repeat, radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 13px, transparent 13px) 0% 100%/15px 15px no-repeat, radial-gradient(circle at 0 0, #ffffff 0, #ffffff 13px, transparent 13px) 100% 100%/15px 15px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) 50% 50%/calc(100% - 4px) calc(100% - 30px) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) 50% 50%/calc(100% - 30px) calc(100% - 4px) no-repeat, -webkit-gradient(linear, left top, right top, from(#ff6800), to(#ff1f00)) no-repeat 100% 100%;
   background: -o-radial-gradient(100% 100%, circle, #ffffff 0, #ffffff 13px, transparent 13px) 0% 0%/15px 15px no-repeat, -o-radial-gradient(0 100%, circle, #ffffff 0, #ffffff 13px, transparent 13px) 100% 0%/15px 15px no-repeat, -o-radial-gradient(100% 0, circle, #ffffff 0, #ffffff 13px, transparent 13px) 0% 100%/15px 15px no-repeat, -o-radial-gradient(0 0, circle, #ffffff 0, #ffffff 13px, transparent 13px) 100% 100%/15px 15px no-repeat, -o-linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 30px) no-repeat, -o-linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 4px) no-repeat, -o-linear-gradient(left, #ff6800 0%, #ff1f00 100%) no-repeat 100% 100%;
   background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 13px, transparent 13px) 0% 0%/15px 15px no-repeat, radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 13px, transparent 13px) 100% 0%/15px 15px no-repeat, radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 13px, transparent 13px) 0% 100%/15px 15px no-repeat, radial-gradient(circle at 0 0, #ffffff 0, #ffffff 13px, transparent 13px) 100% 100%/15px 15px no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 30px) no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 4px) no-repeat, linear-gradient(90deg, #ff6800 0%, #ff1f00 100%) no-repeat 100% 100%;
 }
 
 .fqa__question-wrapper.open .fqa__question {
-  top: 15px;
   color: #333333;
+  padding: 15px 45px 0 18.5px;
+}
+.fqa__question-wrapper.open .fqa__question::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/fqa/minus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 18px;
 }
 
 .fqa__question-wrapper.open .fqa__answer {
@@ -739,8 +715,6 @@ body {
           align-items: flex-start;
   padding: 0px;
   gap: 5px;
-  width: 437px;
-  height: 71px;
 }
 
 .contact-us {
@@ -782,22 +756,17 @@ body {
   padding: 96px 457px;
 }
 .contact-us__title {
-  width: 462px;
-  height: 88px;
-  /* H3 */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  /* or 138% */
   text-align: center;
   color: #ffffff;
+  min-width: 285px;
 }
 .contact-us__button {
   cursor: pointer;
-  /* Button Filled */
-  /* Auto layout */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,26 +783,20 @@ body {
   padding: 4.5px 16px;
   width: 152px;
   height: 56px;
-  /* Black Shades And White/White */
   background: #ffffff;
   border-radius: 15px;
   border: none;
 }
 .contact-us__button-text {
-  /* Button */
-  width: 120px;
-  height: 47px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 47px;
-  /* identical to box height, or 336% */
   text-align: center;
   text-transform: capitalize;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
-  /* Main Gradient */
   background: -webkit-gradient(linear, left top, right top, from(#ff6800), to(#ff1f00));
   background: -o-linear-gradient(left, #ff6800 0%, #ff1f00 100%);
   background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
@@ -874,8 +837,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  width: 662px;
-  height: 604px;
+  max-width: 662px;
+  width: 100%;
   background: #01040d;
   border-radius: 4px;
   display: -webkit-box;
@@ -905,7 +868,6 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  /* Background/bg-primary */
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -931,27 +893,31 @@ body {
 }
 
 .form-title {
-  position: absolute;
-  width: 343px;
-  height: 75px;
-  /* h3 */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 150%;
-  /* identical to box height, or 75px */
   text-transform: uppercase;
-  /* 9 */
   color: #ffffff;
   margin-top: 15px;
   z-index: 12;
 }
 
 .form {
-  position: absolute;
-  width: 561.36px;
-  height: 410px;
+  max-width: 561.36px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 55px 44.64px 49px 40px;
+  padding: 0 10px 0 10px;
+}
+.form__input-text-type-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -960,7 +926,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
-  margin: 145px 54.64px 49px 50px;
+  margin-bottom: 24px;
 }
 .form__user-name-wrapper {
   display: -webkit-box;
@@ -994,8 +960,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
   color: #ffffff;
+  margin-bottom: 50px;
+  height: 24px;
 }
 .form__link {
   font-family: "Montserrat";
@@ -1003,35 +970,28 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  /* 9 */
   color: #ffffff;
 }
 .form__button {
   cursor: pointer;
-  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 560px;
+  max-width: 560px;
+  width: 100%;
   height: 60px;
   border: 1px solid #ffffff;
   border-radius: 4px;
   background-color: unset;
 }
 .form__button-text {
-  position: absolute;
-  width: 44px;
-  height: 18px;
-  left: 257px;
-  top: 21px;
+  padding-top: 21px 259px 21px 257px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 18px;
-  /* identical to box height, or 112% */
   letter-spacing: 0.5px;
   color: #ffffff;
 }
@@ -1079,7 +1039,7 @@ a.form__link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 13px 0 15px 12.52px;
+    padding: 13px 10px 15px 12.52px;
   }
   .burger {
     display: -webkit-box;
@@ -1128,7 +1088,6 @@ a.form__link {
     width: 154.41px;
     height: 42px;
     background: #e75624;
-    /* Orange */
     border: 1px solid #e75624;
     border-radius: 100px 0px 0px 100px;
     -webkit-box-pack: center;
@@ -1157,8 +1116,6 @@ a.form__link {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-    /* Blanc */
     color: #ffffff;
   }
   .container-nav-bar-logo {
@@ -1268,8 +1225,6 @@ a.form__link {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-    /* Noir */
     color: #252525;
   }
   .nav-bar__dropdown-link:hover {
@@ -1288,9 +1243,7 @@ a.form__link {
   .btn-number {
     width: 227px;
     height: 58px;
-    /* Orange */
     background: #e75624;
-    /* Orange */
     border: 1px solid #e75624;
     border-radius: 100px;
   }
@@ -1308,13 +1261,24 @@ a.form__link {
     font-size: 20px;
     line-height: 25px;
   }
+  .reviews {
+    margin-top: 52px;
+  }
+  .reviews__container {
+    padding: 50px 10px;
+  }
+  .fqa__wrapper {
+    padding: 50px 10px;
+  }
+  .fqa__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact-us__wrapper {
+    padding: 50px 10px;
+  }
 }
-.reviews {
-  margin-top: 52px;
-}
-
 .title-section__title {
-  /* White Background/H2 (White Background) */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -1322,7 +1286,6 @@ a.form__link {
   line-height: 42px;
 }
 .title-section__suptitle {
-  /* White Background/P (Medium) (White Background) */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
