@@ -31,12 +31,6 @@ let swiper = new Swiper('.mySwiper', {
 });
 
 const fqaQuestion = document.querySelectorAll('p.fqa__question');
-const fqaSectionQuestionsWrapper = document.querySelector(
-  '.fqa__section-questions-wrapper'
-);
-const fqaQuestionWrapper = document.querySelectorAll(
-  'div.fqa__question-wrapper'
-);
 const contactUsButton = document.querySelector('.contact-us__button');
 const formContainer = document.querySelector('.form-container');
 const formClose = document.querySelector('.form-close');
@@ -44,13 +38,11 @@ const burger = document.querySelector('#burger');
 const popup = document.querySelector('#popup');
 
 //fqa accordion
-fqaSectionQuestionsWrapper.addEventListener('click', showAnswer);
+for (let i = 0; i < fqaQuestion.length; i++) {
+  fqaQuestion[i].addEventListener('click', showAnswer);
+}
 function showAnswer(e) {
-  let dotsCurrent = e.target;
-
-  for (let i = 0; i < fqaQuestion.length; i++) {
-    dotsCurrent.closest('.fqa__question-wrapper').classList.toggle('open');
-  }
+  e.target.parentElement.classList.toggle('open');
 }
 
 //form

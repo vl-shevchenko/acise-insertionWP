@@ -211,8 +211,8 @@ body {
   content: "";
   position: absolute;
   width: 140px;
-  height: 0px;
-  border: 1px solid #e75624;
+  height: 1px;
+  background-color: #e75624;
   top: 0;
 }
 .nav-bar__dropdown-link:hover {
@@ -1276,6 +1276,14 @@ a.form__link {
   }
   .contact-us__wrapper {
     padding: 50px 10px;
+  }
+  .form-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .form {
+    margin: 25px 44.64px 25px 40px;
   }
 }
 .title-section__title {
